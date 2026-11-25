@@ -1,0 +1,8 @@
+/* Daggerheart Combat Tracker Companion */
+
+/*
+ * Resource colors (filled in step 5):
+ * - HP:      #7cd000  (core Token HUD bar1 border)
+ * - Stress:  #659db5  (core Token HUD bar2 border)
+ * - Evasion / Difficulty: var(--golden, #f3c267)  (Daggerheart system palette)
+ */

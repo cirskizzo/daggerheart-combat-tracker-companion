@@ -1,0 +1,14 @@
+{
+  "DHCTC.PlaylistChoice.Title": "Choose combat playlist",
+  "DHCTC.PlaylistChoice.Hint": "Which playlist should play during this combat?",
+  "DHCTC.PlaylistChoice.None": "Cancel (no change)",
+  "DHCTC.Settings.Playlist1": "Combat playlist 1",
+  "DHCTC.Settings.Playlist2": "Combat playlist 2",
+  "DHCTC.Settings.Playlist3": "Combat playlist 3",
+  "DHCTC.Settings.PlaylistHint": "Playlist to offer as combat background music. Leave empty to disable this slot.",
+  "DHCTC.Settings.PlaylistNone": "None",
+  "DHCTC.Tooltip.HP": "HP: {value}/{max}",
+  "DHCTC.Tooltip.Stress": "Stress: {value}/{max}",
+  "DHCTC.Tooltip.Evasion": "Evasion: {value}",
+  "DHCTC.Tooltip.Difficulty": "Difficulty: {value}"
+}
