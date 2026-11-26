@@ -10,5 +10,11 @@
   "DHCTC.Tooltip.HP": "HP: {value}/{max}",
   "DHCTC.Tooltip.Stress": "Stress: {value}/{max}",
   "DHCTC.Tooltip.Evasion": "Evasion: {value}",
-  "DHCTC.Tooltip.Difficulty": "Difficulty: {value}"
+  "DHCTC.Tooltip.Difficulty": "Difficulty: {value}",
+  "DHCTC.Spotlight.Never": "Spotlight: never received",
+  "DHCTC.Spotlight.Current": "Spotlight: {count} · has it now",
+  "DHCTC.Spotlight.Ago": "Spotlight: {count} · last one {ago} spotlights ago",
+  "DHCTC.Spotlight.Neglected": "falling behind in this combat",
+  "DHCTC.Settings.SpotlightGap": "Spotlight imbalance threshold",
+  "DHCTC.Settings.SpotlightGapHint": "Highlight a character in the combat tracker when they have this many fewer Spotlights than the most-spotlighted character."
 }

@@ -1,8 +1,8 @@
 {
   "id": "daggerheart-combat-tracker-companion",
   "title": "Daggerheart Combat Tracker Companion",
-  "description": "Playlist auto-play and inline resources for Daggerheart combat tracker",
-  "version": "0.1.0",
+  "description": "Playlist auto-play, inline resources and Spotlight fairness log for Daggerheart combat tracker",
+  "version": "0.2.0",
   "compatibility": {
     "minimum": "14",
     "verified": "14.369"

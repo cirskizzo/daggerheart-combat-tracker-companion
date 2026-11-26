@@ -5,6 +5,7 @@
 
 import { PlaylistManager } from "./playlist-manager.js";
 import { ResourcesDisplay } from "./resources-display.js";
+import { SpotlightLog } from "./spotlight-log.js";
 
 export const MODULE_ID = "daggerheart-combat-tracker-companion";
 
@@ -44,10 +45,22 @@ function registerSettings() {
       input: createPlaylistSelect
     });
   });
+
+  game.settings.register(MODULE_ID, "spotlightGapThreshold", {
+    name: "DHCTC.Settings.SpotlightGap",
+    hint: "DHCTC.Settings.SpotlightGapHint",
+    scope: "world",
+    config: true,
+    type: Number,
+    range: { min: 1, max: 5, step: 1 },
+    default: 2,
+    onChange: () => ui.combat?.render()
+  });
 }
 
 Hooks.once("init", () => {
   registerSettings();
   PlaylistManager.registerHooks();
-  ResourcesDisplay.registerHooks();
+  ResourcesDisplay.registerHooks(); // Must stay before SpotlightLog: its badge joins the resource row
+  SpotlightLog.registerHooks();
 });
