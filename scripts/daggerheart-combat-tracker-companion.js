@@ -4,6 +4,7 @@
  */
 
 import { PlaylistManager } from "./playlist-manager.js";
+import { ResourcesDisplay } from "./resources-display.js";
 
 export const MODULE_ID = "daggerheart-combat-tracker-companion";
 
@@ -48,4 +49,5 @@ function registerSettings() {
 Hooks.once("init", () => {
   registerSettings();
   PlaylistManager.registerHooks();
+  ResourcesDisplay.registerHooks();
 });

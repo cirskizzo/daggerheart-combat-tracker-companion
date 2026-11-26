@@ -1,8 +1,33 @@
 /* Daggerheart Combat Tracker Companion */
 
 /*
- * Resource colors (filled in step 5):
- * - HP:      #7cd000  (core Token HUD bar1 border)
- * - Stress:  #659db5  (core Token HUD bar2 border)
- * - Evasion / Difficulty: var(--golden, #f3c267)  (Daggerheart system palette)
+ * Inline resource row in the combat tracker (GM only), between the combatant name and its controls.
+ * Colors:
+ * - HP:      #7cd000  (core Token HUD bar1 border; DH binds bar1 to HP)
+ * - Stress:  #659db5  (core Token HUD bar2 border; DH binds bar2 to Stress)
+ * - Evasion / Difficulty: Daggerheart --golden, with fallback
  */
+.combat-tracker .combatant .dhctc-resources {
+  display: flex;
+  gap: 0.75em;
+  font-size: var(--font-size-12, 12px);
+  font-weight: bold;
+  line-height: 1.2;
+  font-variant-numeric: tabular-nums;
+}
+
+.combat-tracker .combatant .dhctc-resources > span {
+  cursor: help;
+}
+
+.combat-tracker .combatant .dhctc-hp {
+  color: #7cd000;
+}
+
+.combat-tracker .combatant .dhctc-stress {
+  color: #659db5;
+}
+
+.combat-tracker .combatant .dhctc-defense {
+  color: var(--golden, #f3c267);
+}
